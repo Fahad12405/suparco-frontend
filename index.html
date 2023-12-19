@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+    <script src="bootstrap.js"></script>
+    <style>
+  
+
+
+       h3{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+       }
+        /* Custom CSS styles for the logo */
+        .logo img {
+            width: 100px;
+            height: 90px;
+            border-radius: 50%;
+           
+
+           
+          
+        }
+
+        /* Media query for tablets (e.g., iPad) */
+        @media (max-width: 768px) {
+            #logo-img {
+                width: 60px; /* Adjust the width for tablets as needed */
+                height: 60px; /* Adjust the height for tablets as needed */
+            }
+        }
+
+        /* Media query for mobile phones */
+        @media (max-width: 480px) {
+            #logo-img {
+                width: 40px; /* Adjust the width for mobile devices as needed */
+                height: 40px; /* Adjust the height for mobile devices as needed */
+            }
+        }
+   
+
+.name h6{
+    color: white;
+    padding-left: 500px;
+}
+/* Default styles for the logo */
+.content{
+  padding: 30px;
+  margin: 5px;
+}
+.content .btn{
+    margin-top: 30px;
+}
+h2{
+    
+    font-family: initial;
+}
+.content h1{
+    margin-top: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;}
+.images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+.images a {
+            flex: 1;
+            padding: 10px;
+       
+            position: relative; /* Add relative positioning for the close button */
+        }
+
+.images a img {
+            width: 100%;
+            height: 100%;
+        }
+   /* Styles for the image popup */
+   .images {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+   
+    margin:30px auto;
+    padding: 20px;
+    background-color: rgb(20, 20, 20);
+    border: 1px solid #f4efef;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 270px;
+    width: 1200px;
+}
+
+.images img {
+  max-width:100%;
+    height: auto;
+ 
+   
+
+}
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+
+
+.popup-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close-popup {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: rgb(197, 182, 182);
+}
+/* Change the border color to blue */
+/* Change the border color to blue and text color to white */
+.btn-outline-success {
+    border-color: rgb(237, 237, 247) !important;
+    color: white !important;
+}
+
+/* Change the hover color to white */
+.btn-outline-success:hover {
+    border-color: white !important;
+    color: white !important;
+    background-color: transparent !important;
+}
+
+.card img{
+    width: 100%;
+            height: 100%;
+           
+
+}
+.spotlight{
+padding-top: 100px;
+padding-bottom: 30px;
+font-family: inherit;
+}
+/* Custom CSS for the card design */
+.card.h-100 {
+    
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card.h-100:hover {
+    transform: scale(1.05);
+}
+
+.card.h-100 img.card-img-top {
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    height: 300px; /* Adjust the height as needed */
+}
+
+.card.h-100 .card-body {
+    padding: 15px;
+}
+
+.card.h-100 .card-title {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.card.h-100 .card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.card.h-100 .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.card.h-100 .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+
+
+/*footer*/
+
+
+
+    </style>
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+        <div class="bg-black p-4">
+            <h5 class="text-body-emphasis h4">Collapsed content</h5>
+            <span class="text-body-secondary">Toggleable via the navbar brand.</span>
+        </div>
+    </div>
+    <nav class="navbar navbar-black bg-black">
+
+        <div class="container-fluid">
+<button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+
+
+            <nav class="navbar bg-black">
+                <div class="container-fluid" style="background-color: rgb(0, 0, 0);">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <div class="name">
+                        <h6>Pakistan Space & Upper Atmosphere <br> Research Commission</h6>
+                    </div>
+                </div>
+            </nav>
+            <div class="logo">
+                <a><img src="images/logo.png"  id="logo-img" alt="Logo"></a>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/slide 1.jpg" class="d-block w-100" alt="..." height="500px" >
+            <div class="carousel-caption d-none d-md-block">
+              <p>Missions</p>
+              <h3>Launch of PAK-SAT 1R High Power Satellite</h3>
+              <button type="button" class="btn btn-primary btn-lg">Satellite Program</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/slide2.jpg"
+              class="d-block w-100" alt="..." height="500px" >
+            <div class="carousel-caption d-none d-md-block">
+              <p>Weather</p>
+              <h3>Daily Space Weather Summary (SUPARCO)</h3>
+              <button type="button" class="btn btn-primary btn-lg">Weather Reports</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/slide3.jpg" class="d-block w-100" alt="..." height="500px" >
+            <div class="carousel-caption d-none d-md-block">
+              <p>Story</p>
+              <h3>Technical Exhibition Of Space Capabilities At DUBAI EXPO 2019</h3>
+              <button type="button" class="btn btn-primary btn-lg">Events & Programs</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/slide4.jpg" class="d-block w-100" alt="..." height="500px" >
+            <div class="carousel-caption d-none d-md-block">
+              <p>Products & Service</p>
+              <h3>Remote Sensing Data Have Enhanced Human Understanding Of The Environment</h3>
+              <button type="button" class="btn btn-primary btn-lg">Environment</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+     <div class="content">
+      <br> <h2>Exploring The Space News Weather Update & Knowledge</h2>
+      <a href=""><button type="button" class="btn btn-dark btn-block">Learn More</button></a>
+      <h1>Featured News  </h1>
+      <div class="images">
+        <a href="javascript:void(0);" onclick="openPopup('images/slide 1.jpg')">
+            <img src="images/slide 1.jpg" class="img-thumbnail" alt="...">
+        </a>
+        <a href="javascript:void(0);" onclick="openPopup('images/slide2.jpg')">
+            <img src="images/slide2.jpg" class="img-thumbnail" alt="...">
+        </a>
+        <a href="javascript:void(0);" onclick="openPopup('images/slide3.jpg')">
+            <img src="images/slide3.jpg" class="img-thumbnail" alt="...">
+        </a>
+        <a href="javascript:void(0);" onclick="openPopup('images/slide4.jpg')">
+            <img src="images/slide4.jpg" class="img-thumbnail" alt="...">
+        </a>
+    </div>
+
+    <div class="popup-container">
+        <div class="popup-content">
+            <span class="close-popup" onclick="closePopup()">&times;</span>
+            <img id="popupImage" src="" alt="">
+        </div>
+    
+    </div>
+    <button type="button" class="btn btn-primary btn-lg">More News</button>
+    <h1 class="spotlight">Our Spotlight</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/slider5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Space Applications</h5>
+              <p class="card-text">Space Technology Applications</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/slider6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Major problems</h5>
+              <p class="card-text">Pakistan Remote Sensing Satellites</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/slider7.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Products & Services</h5>
+              <p class="card-text">COSPASSARSAT</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+              <img src="images/slider8.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Research Program</h5>
+                <p class="card-text">Space Station Research Experiments</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/slider9.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Satellite Program</h5>
+                <p class="card-text">Satellite Navigation Program</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/slider10.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Interational Cop</h5>
+                <p class="card-text">Interational Co-Operation in the Exploration</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/slider11.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Urban Program</h5>
+                <p class="card-text">Urban Planning & Management</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/slider13.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Water Resources</h5>
+                <p class="card-text">Remote Sensing provides  sustainable use and management of water resources.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/slider12.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Research Program</h5>
+              <p class="card-text">PRSS-1 Web Portal</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  <div class="carousel-inner">
+  <div class="carousel-item active">
+    <img src="images/slider14.jpg" class="d-block w-100" alt="..." height="700px" style="padding-top: 80px;">
+    <div class="carousel-caption d-none d-md-block">
+      <div class="text-left" style="margin-left: -130px; padding-bottom: 80px;">
+        <h4 class="vid" style="margin-bottom: 0%; margin-left: 10px;">Video</h4>
+     <a href="#">   <button type="button" class="btn btn-primary btn-lg" style="margin: 10px;">Science & Exploration</button></a>
+     
+        <h1 class="learn" style="padding-top: 10px; padding-left: 15px;">Learn Satellite & their Component</h1>
+      <a href="#">  <button type="button" class="btn btn-primary btn-lg" style="margin-left: 10px;">Play  &nbsp;&nbsp;--></button> </a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<h1 class="spotlight">Videos</h1>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/slider5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Space Applications</h5>
+          <p class="card-text">Space Technology Applications</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/slider6.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Major problems</h5>
+          <p class="card-text">Pakistan Remote Sensing Satellites</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/slider7.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Products & Services</h5>
+          <p class="card-text">COSPASSARSAT</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/silder15.jpg" class="d-block w-100" alt="..." height="700px" style="padding-top: 80px;   background-size: cover;"  >
+        <div class="carousel-caption d-none d-md-block">
+          <div class="text-left" style="margin-left: -130px; padding-bottom: 80px;">
+            <h4 class="vid" style="margin-bottom: 0%; margin-left: 10px;">Image</h4>
+         <a href="#">   <button type="button" class="btn btn-primary btn-lg" style="margin: 10px;">Science & Exploration</button></a>
+         
+            <h1 class="learn" style="padding-top: 10px; padding-left: 15px;">Real Picture Of Sun Taking From Space <nav></nav></h1>
+          <a href="#">  <button type="button" class="btn btn-primary btn-lg" style="margin-left: 10px;">Play  &nbsp;&nbsp;--></button> </a>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+    <h1 class="spotlight">Images</h1>
+    <div style="width:100%" class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/slider13.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/slider14.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a short card.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/silder15.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+      </div>
+      
+    
+    </div>
+
+    <h1 class="spotlight">Relates Links</h1>
+    <div style="width:100%;" class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <a href="#"><img src="images/slider16.png" class="card-img-top" alt="..."></a>
+        
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <a href="#"></a><img src="images/slider17.png" class="card-img-top" alt="..."></a>
+          
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <a href="#"> <img src="images/slider18.jpg" class="card-img-top" alt="..."></a>
+ 
+        </div>
+      </div>
+    
+      
+    
+    </div>
+   
+    <script>
+        const popupContainer = document.querySelector('.popup-container');
+        const popupImage = document.getElementById('popupImage');
+
+        function openPopup(imageUrl) {
+            popupImage.src = imageUrl;
+            popupContainer.style.display = 'block';
+        }
+
+        function closePopup() {
+            popupContainer.style.display = 'none';
+        }
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
